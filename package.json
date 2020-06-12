@@ -1,0 +1,21 @@
+{
+  "name": "chinakafuuselfhost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "cli-spinners": "^2.3.0",
+    "discord.js": "^11.5.1",
+    "mal-scraper": "^2.6.9",
+    "opusscript": "0.0.7",
+    "ytdl-core": "^2.1.7"
+  }
+}
