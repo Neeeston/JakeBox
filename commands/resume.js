@@ -32,7 +32,7 @@ exports.run = async (client, message, args, ops) => {
     let embed = new Discord.RichEmbed()
     .setTitle("Sucesso!")
     .setColor("GREEN")
-    .setDescription("Música pausada com sucesso!")
+    .setDescription("A música voltou a tocar!")
     message.channel.send(embed);
 }
 
