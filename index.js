@@ -31,6 +31,15 @@ client.on("ready", async () => {
 });
 
 client.on("message", async message => {
+
+    function jakeReply(content, prefix) {
+        if (!prefix) {
+            message.channel.send(message.author + " " + content);
+        } else {
+            message.channel.send(prefix + " **|** " + message.author + " " + content);
+        }
+    }
+
     if(message.author.bot) return;
 
     if(message.content.startsWith("<@!720693867661230212>")) {
@@ -51,7 +60,7 @@ client.on("message", async message => {
     }
 
     let commandFile = client.commands.get(command.slice(prefix.length)) || client.commands.get(client.aliases.get(command.slice(prefix.length)));
-    if(commandFile) commandFile.run(client, message, args, ops);
+    if(commandFile) commandFile.run(client, message, args, ffReply, ops);
 
 });
 
